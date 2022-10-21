@@ -1,7 +1,9 @@
 import sys
 import pygame
+#引入pygame中所有常量，比如 QUIT
+from pygame.locals import *
 
-#http://c.biancheng.net/pygame/display.html
+#http://c.biancheng.net/pygame/time.html
 
 
 
@@ -21,6 +23,22 @@ def main():
 
     #set window title
     pygame.display.set_caption('mouse')
+    screen.fill('white')
+
+    face = pygame.Surface((50,50),flags=pygame.HWSURFACE)
+    #fill color
+    face.fill(color='pink')
+
+    #加载一张图片
+    # image_surface = pygame.image.load("C:/Users/Administrator/Desktop/c-net.png").convert()
+    # image_new = pygame.transform.scale(image_surface,(300,300))
+    # 查看新生成的图片的对象类型
+    #print(type(image_new))
+    # 对新生成的图像进行旋转至45度
+    # image_1 =pygame.transform.rotate(image_new,45)
+    # 使用rotozoom() 旋转 0 度，将图像缩小0.5倍
+    # image_2 = pygame.transform.rotozoom(image_1,0,0.5)
+
 
     #game loop
     while True:
@@ -32,6 +50,9 @@ def main():
                 pygame.quit()
                 # end process
                 sys.exit()
+        #add face to screen
+        screen.blit(face, (100,100))
+
         #refresh all screen
         pygame.display.flip()
 
