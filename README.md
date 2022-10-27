@@ -1,6 +1,8 @@
 # pygame
+參考網址：http://c.biancheng.net/pygame/surface.html
 
 #等待事件发生
+
     # event = pygame.event.wait()
     # if event.type == pygame.QUIT:
     #     exit()
