@@ -1,6 +1,6 @@
 # Unity 2D
 https://www.cg.com.tw/Unity2D/
-
+https://www.cg.com.tw/Unity2D/2D-UFO.php
 # UFO初學者教學
 學習目標
 1.使用鍵盤控制角色移動
@@ -31,8 +31,28 @@ private void FixedUpdate()
 size,background
 
 4-蒐集物件功能
+為金塊、UFO加上rigibody 2D, circle collider 2D，將重力設為0
+在UFO加上
+public void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log(collision.gameObject.tag);
+    }
+查看碰撞效果
+
+破壞物件
+Destroy(collision.gameObject);
+
+5-建立UI text
 建立金塊prefab
-collider
+右鍵->UI->text (TMP)
+調整位置、文字
+
+6-其他小細節
+為牆壁加上collider
+金塊自動產生
+為UFO、金塊加上轉動效果
+
+
 
 
 
