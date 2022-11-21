@@ -46,11 +46,12 @@ Destroy(collision.gameObject);
 建立金塊prefab
 右鍵->UI->text (TMP)
 調整位置、文字
+using Text = TMPro.TextMeshProUGUI;
 
 6-其他小細節
 為牆壁加上collider
 金塊自動產生
-為UFO、金塊加上轉動效果
+為UFO、金塊加上轉動效果-rotation
 
 
 
