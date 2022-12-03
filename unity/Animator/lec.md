@@ -29,6 +29,8 @@
 --SpriteRenderer圖片物件<br/>
 --myAnimator動畫物件/scale X<br/>
 
+#### unity asset
+
 
 ### 骨骼動畫補充教材<br/>
 https://www.youtube.com/watch?v=LNqr7K_7cx0<br/>
